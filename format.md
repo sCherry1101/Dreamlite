@@ -1,6 +1,3 @@
-NOTE: This project will not accept any merge request since this is personal project for educational project. My other projects sure do accept contributions and merge requests but dreamlite is 
-exception.
-
 #HTML 
 
 -ID: snake_case 

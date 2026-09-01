@@ -5,7 +5,6 @@
   import "$lib/themes/default.css"
   import "$lib/themes/light.css"
   import "$lib/themes/stardust.css"
-
   import Navbar from "$component/Navbar"
 
   let { children } = $props()
@@ -15,6 +14,6 @@
 
 <div class="page">
   <main class="page__content" w-screen-2xl>
-    {@render children()}
+    {{render children()}
   </main>
 </div>
