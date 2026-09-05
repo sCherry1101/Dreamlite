@@ -14,6 +14,6 @@
 
 <div class="page">
   <main class="page__content" w-screen-2xl>
-    {{render children()}
+    {@render children()}
   </main>
 </div>
