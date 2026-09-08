@@ -8,19 +8,11 @@
     links = [
       {
         label: 'Science',
-        href: '/science',
-        icon: 'lucide:flask-conical'
+        href: '/science'
       },
       {
         label: 'Maths',
-        href: '/maths',
-        icon: 'lucide:calculator'
-      },
-      {
-        label: 'GitHub',
-        href: 'https://github.com/sCherry1101/dreamlite',
-        icon: 'lucide:github',
-        external: true
+        href: '/maths'
       },
       {
         label: 'About',
@@ -31,9 +23,11 @@
   } = $props()
 
   let theme = $state('default')
+  let themeOpen = $state(false)
 
   function setTheme(newTheme) {
     theme = newTheme
+    themeOpen = false
 
     if (newTheme === 'default') {
       document.documentElement.removeAttribute('data-theme')
@@ -46,44 +40,53 @@
 <header class="navbar">
   <div class="navbar__container">
 
-    <!-- Brand -->
     <a href={brandUrl} class="navbar__brand">
       <span class="navbar__brand-text">{brand}</span>
     </a>
 
-    <!-- Navigation -->
     <nav class="navbar__nav-desktop">
-
-      <!-- Theme controls -->
       <div class="theme-switcher">
-        <button
-          class="theme-button"
-          class:active={theme === 'default'}
-          onclick={() => setTheme('default')}
-        >
-          Default
-        </button>
 
         <button
           class="theme-button"
-          class:active={theme === 'light'}
-          onclick={() => setTheme('light')}
+          class:active={themeOpen}
+          onclick={() => themeOpen = !themeOpen}
         >
-          Light
+          Themes
+          <span class="theme-arrow">⌄</span>
         </button>
 
-        <button
-          class="theme-button"
-          class:active={theme === 'stardust'}
-          onclick={() => setTheme('stardust')}
-        >
-          Stardust
-        </button>
+        {#if themeOpen}
+          <div class="theme-menu">
+
+            <button
+              class:active={theme === 'default'}
+              onclick={() => setTheme('default')}
+            >
+              Default
+            </button>
+
+            <button
+              class:active={theme === 'light'}
+              onclick={() => setTheme('light')}
+            >
+              Light
+            </button>
+
+            <button
+              class:active={theme === 'stardust'}
+              onclick={() => setTheme('stardust')}
+            >
+              Stardust
+            </button>
+
+          </div>
+        {/if}
+
       </div>
 
       <span class="navbar__divider"></span>
 
-      <!-- Page links -->
       <ul class="navbar__links">
         {#each links as link}
           <li>
