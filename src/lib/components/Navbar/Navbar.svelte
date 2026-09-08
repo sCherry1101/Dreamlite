@@ -3,7 +3,7 @@
   import Button from '../Button'
 
   let {
-    brand = 'Dreamlite',
+    brand = 'Anvesha',
     brandUrl = '/',
     links = [
       {

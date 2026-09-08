@@ -1,8 +1,8 @@
-# Dreamlite
+# Anvesha
 
 ## Overview
 
-Dreamlite is 3D visualisation of STEM diagrams so it helps learners understand concept well!
+Anvesha is 3D visualisation of STEM diagrams so it helps learners understand concept well!
 
 ---
 
@@ -82,7 +82,7 @@ Each organelle is built as a separate JavaScript module
 
 ## How to run?
 
-Deployment available on: [Dreamlite](https://dreamlite.vercel.app/)
+Deployment available on: [Anvesha](https://dreamlite.vercel.app/)
 
 But to run locally , ensure you have Node.js installed on your system!
 
