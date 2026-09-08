@@ -51,3 +51,13 @@
     padding: 1.5rem;
   }
 }
+
+.tabs__tablist {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
