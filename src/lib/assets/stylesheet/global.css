@@ -34,16 +34,12 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-
   border: 1px solid var(--border);
   border-radius: 0.6rem;
-
   font-family: inherit;
   font-weight: 500;
   text-decoration: none;
-
   cursor: pointer;
-
   transition:
     background-color 0.2s ease,
     color 0.2s ease,
@@ -206,7 +202,8 @@ a {
 #homepage_box,
 #science_box,
 #error_div,
-#about_div{
+#about_div,
+#maths_div {
   min-height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
@@ -243,7 +240,9 @@ a {
 @media (max-width: 768px) {
   #homepage_box,
   #science_box,
-  #error_div {
+  #error_div ,
+  #about_div,
+  #maths_div {
     min-height: auto;
     padding: 3rem 1rem;
   }

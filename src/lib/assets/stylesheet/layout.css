@@ -1,6 +1,8 @@
 #homepage_box,
 #science_box,
-#error_div {
+#error_div,
+#about_div,
+#maths_box {
   min-height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
@@ -37,7 +39,9 @@
 @media (max-width: 768px) {
   #homepage_box,
   #science_box,
-  #error_div {
+  #error_div ,
+  #about_div,
+  #maths_box {
     min-height: auto;
     padding: 3rem 1rem;
   }
