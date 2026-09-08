@@ -16,4 +16,7 @@
   <p class="element-card__name">
     {element.name}
   </p>
+  <p class="bohr_model">
+    {element.bohr_model}
+  </p>
 </button>
