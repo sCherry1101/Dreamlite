@@ -13,7 +13,7 @@
 
     <div class="subject-card">
       <h2>Mensuration</h2>
-     <Button href="/mensuration" variant="primary">Click here</Button>
+     <Button href="/maths/mensuration" variant="primary">Click here</Button>
     </div>
   </div>
 </div>
