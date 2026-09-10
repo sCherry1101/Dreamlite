@@ -31,6 +31,7 @@ Intial goal of Anvesha is to make NCERT-based materials available at one place w
 - Pythagoras Simulation
     1. Diagram of how actually Pythagoras theorem can be visualised.
     2. Interactive so you can experiment with different measurements at a scale.
+    
 
 - Mensuration Simulation
     Currently available for 2D shapes:
